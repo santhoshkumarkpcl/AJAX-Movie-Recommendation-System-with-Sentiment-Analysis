@@ -26,7 +26,7 @@ $(function() {
 
 // will be invoked when clicking on the recommended movies
 function recommendcard(e){
-  var my_api_key = 'YOUR_API_KEY';
+  var my_api_key = '2d5c513249d43adc63b35999bcb32f35';
   var title = e.getAttribute('title'); 
   load_details(my_api_key,title);
 }
@@ -35,7 +35,7 @@ function recommendcard(e){
 function load_details(my_api_key,title){
   $.ajax({
     type: 'GET',
-    url:'https://api.themoviedb.org/3/search/movie?api_key='+my_api_key+'&query='+title,
+    url:'https://api.themoviedb.org/3/search/movie?api_key='++'&query='+title,
 
     success: function(movie){
       if(movie.results.length<1){
