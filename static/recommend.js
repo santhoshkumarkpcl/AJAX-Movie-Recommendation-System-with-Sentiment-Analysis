@@ -12,7 +12,7 @@ $(function() {
   source.addEventListener('input', inputHandler);
 
   $('.movie-button').on('click',function(){
-    var my_api_key = 'YOUR_API_KEY';
+    var my_api_key = '2d5c513249d43adc63b35999bcb32f35';
     var title = $('.movie').val();
     if (title=="") {
       $('.results').css('display','none');
