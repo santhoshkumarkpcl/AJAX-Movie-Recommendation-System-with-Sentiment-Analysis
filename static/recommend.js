@@ -217,7 +217,7 @@ function get_movie_cast(movie_id,my_api_key){
         }
       },
       error: function(){
-        alert("Invalid Request!");
+        alert("Invalid Request! in cast searchig");
         $("#loader").delay(500).fadeOut();
       }
     });
@@ -237,7 +237,7 @@ function get_movie_posters(arr,my_api_key){
         arr_poster_list.push('https://image.tmdb.org/t/p/original'+m_data.results[0].poster_path);
       },
       error: function(){
-        alert("Invalid Request!");
+        alert("Invalid Request! in searching Movie_poster");
         $("#loader").delay(500).fadeOut();
       },
     })
